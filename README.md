@@ -20,9 +20,9 @@ for (const unsecretSpell of unsecretSpells.split(';')){
 The secret spell has been revealed.
   
 Spell:
-&nbsp;Three Rings for the Elven-kings under the sky,
-&nbsp;Seven for the Dwarf-lords in their halls of stone,
-&nbsp;Nine for Mortal Men doomed to die,
-&nbsp;One for the Dark Lord on his dark throneIn the Land of Mordor where the Shadows lie.
-&nbsp;One Ring to rule them all, One Ring to find them,
+&nbsp;Three Rings for the Elven-kings under the sky,  
+&nbsp;Seven for the Dwarf-lords in their halls of stone,  
+&nbsp;Nine for Mortal Men doomed to die,  
+&nbsp;One for the Dark Lord on his dark throneIn the Land of Mordor where the Shadows lie.  
+&nbsp;One Ring to rule them all, One Ring to find them,  
 &nbsp;One Ring to bring them all and in the darkness bind themIn the Land of Mordor where the Shadows lie.
