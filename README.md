@@ -19,7 +19,7 @@ for (const unsecretSpell of unsecretSpells.split(';')){
 
 The secret spell has been revealed.
   
-Spell:
+Spell:  
 &nbsp;Three Rings for the Elven-kings under the sky,  
 &nbsp;Seven for the Dwarf-lords in their halls of stone,  
 &nbsp;Nine for Mortal Men doomed to die,  
