@@ -29,7 +29,7 @@ Spell:
 
 ## A unique list of items for the expedition
 
-A hobbit can only pack one iem of each type into his backpack. Help the hbbit create a unique list of items for the expedition.
+A hobbit can only pack one iem of each type into his backpack. Help the hobbit create a unique list of items for the expedition.
 
 Solution:
 
