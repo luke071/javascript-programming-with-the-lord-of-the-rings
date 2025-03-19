@@ -17,7 +17,7 @@ for (const unsecretSpell of unsecretSpells.split(';')){
 }
 ```
 
-The secret spell has been revealed.
+The function returns:
   
 Spell:  
 &nbsp;Three Rings for the Elven-kings under the sky,  
@@ -26,3 +26,32 @@ Spell:
 &nbsp;One for the Dark Lord on his dark throneIn the Land of Mordor where the Shadows lie.  
 &nbsp;One Ring to rule them all, One Ring to find them,  
 &nbsp;One Ring to bring them all and in the darkness bind themIn the Land of Mordor where the Shadows lie.
+
+## A unique list of items for the expedition
+
+A hobbit can only pack one iem of each type into his backpack. Help the hbbit create a unique list of items for the expedition.
+
+Solution:
+
+```js 
+let backpackItems= ['map', 'penknife', 'cup','cutlery', 'blanket', 'cup', 'map'];
+
+function uniqueBackpackContent(arr){
+    let len = arr.length;
+    for(let i = 0; i < len; i++){
+        for(let j=i +1 ; j <len; j++) {
+            if(arr[i] === arr[j]){
+                arr.splice(j,1);
+                len--;
+                j--
+            }
+        }  
+    }
+    console.log(`A unique list of items for the expedition: ${arr}.`);
+}
+uniqueBackpackContent(backpackItems);
+}
+```
+
+The function returns:
+A unique list of items for the expedition: map,penknife,cup,cutlery,blanket.
