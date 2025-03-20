@@ -49,6 +49,7 @@ function uniqueBackpackContent(arr){
     }
     console.log(`A unique list of items for the expedition: ${arr}.`);
 }
+
 uniqueBackpackContent(backpackItems);
 }
 ```
@@ -109,7 +110,6 @@ function arePalindrome(str1, str2) {
   }
 }
 
-;
 console.log(arePalindrome("deified", "deified"));
 ```
 
