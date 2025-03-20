@@ -55,3 +55,34 @@ uniqueBackpackContent(backpackItems);
 
 The function returns:
 A unique list of items for the expedition: map,penknife,cup,cutlery,blanket.
+
+
+## Permutation
+
+```js
+function arePermutation(str1, str2) {
+  let len1 = str1.length;
+  let len2 = str2.length;
+
+  if (len1 !== len2) {
+    return false;
+  }
+
+  let arr1 = str1.split("");
+  let arr2 = str2.split("");
+
+  arr1.sort();
+  arr2.sort();
+
+  for (let i = 0; i < len1; i++) {
+    if (arr1[i] === arr2[i]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+console.log(arePermutation("ring", "gnir"));
+```
+
