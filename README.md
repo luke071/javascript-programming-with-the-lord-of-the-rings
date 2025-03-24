@@ -29,7 +29,7 @@ Spell:
 
 ## A unique list of items for the expedition
 
-A hobbit can only pack one item of each type into his backpack. Help the hobbit create a unique list of items for the expedition.
+Frodo Baggins can only pack one item of each type into his backpack. Help the hobbit create a unique list of items for the expedition.
 
 Solution:
 
@@ -60,7 +60,7 @@ A unique list of items for the expedition: map,penknife,cup,cutlery,blanket.
 
 ## Permutation
 
-Help Hobit check if two strings are permutation of each other.
+Help Hobbit check if two strings are permutation of each other.
 
 ```js
 function arePermutation(str1, str2) {
