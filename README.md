@@ -60,6 +60,8 @@ A unique list of items for the expedition: map,penknife,cup,cutlery,blanket.
 
 ## Permutation
 
+Help Hobit check if two strings are permutation of each other.
+
 ```js
 function arePermutation(str1, str2) {
   let len1 = str1.length;
@@ -88,6 +90,8 @@ console.log(arePermutation("ring", "gnir"));
 ```
 
 ## Palindrome
+
+Merry Brandybuck collects words that are palindromes. Help him to find them.
 
 ```js
 function arePalindrome(str1, str2) {
