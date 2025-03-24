@@ -9,15 +9,15 @@ CategoryName char(50) NOT NULL
 CREATE TABLE Books (
 BookId int,
 CategoryId int,
-BookName char(50) NOT NULL,
-CatalogNumber char(10) NOT NULL,
+Title char(50) NOT NULL,
+Author char(50) NOT NULL,
+CatalogNumber char(10),
 PurchasePrice decimal(6,2),
 SellingPrice decimal(6,2),
 StockStatus int,
 IsNew boolean,
 IsSale boolean
 );
-
 
 CREATE TABLE Customers_Orders_Items (
 OrderId int,
@@ -41,13 +41,10 @@ PriceBoxM decimal (6,2) NOT NULL,
 PriceBoxL decimal (6,2) NOT NULL
 );
 
-
 CREATE TABLE Statuses (
 StatusId int,
 StatusName char(10) NOT NULL
 );
-
-
 
 CREATE TABLE Customers_Orders (
 OrderId int NOT NULL DEFAULT 0,
@@ -66,14 +63,12 @@ SendingDate date,
 Comments char(255)
 );
 
-
 CREATE TABLE Employees (
 EmployeeId int,
 Name char(10) NOT NULL,
 Surname char(10) NOT NULL,
 IsAvailable boolean
 );
-
 
 ALTER TABLE Categories ADD 
 	CONSTRAINT PK_Categories PRIMARY KEY    
@@ -82,14 +77,12 @@ ALTER TABLE Categories ADD
 	)  
 ;
 
-
 ALTER TABLE Books ADD 
 	CONSTRAINT PK_Books PRIMARY KEY    
 	(
 		BookId
 	)  
 ;
-
 
 ALTER TABLE Customers_Orders_Items ADD 
 	CONSTRAINT PK_Customers_Orders_Items PRIMARY KEY    
@@ -98,15 +91,12 @@ ALTER TABLE Customers_Orders_Items ADD
 	)  
 ;
 
-
-
 ALTER TABLE Customers ADD 
 	CONSTRAINT PK_Customers PRIMARY KEY    
 	(
 		CustomerId
 	)  
 ;
-
 
 ALTER TABLE Couriers ADD 
 	CONSTRAINT PK_Couriers PRIMARY KEY    
@@ -115,14 +105,12 @@ ALTER TABLE Couriers ADD
 	)  
 ;
 
-
 ALTER TABLE Statuses ADD 
 	CONSTRAINT PK_Statuses PRIMARY KEY    
 	(
 		StatusId
 	)  
 ;
-
 
 ALTER TABLE Customers_Orders ADD 
 	CONSTRAINT PK_Customers_Orders PRIMARY KEY    
@@ -137,8 +125,6 @@ ALTER TABLE Employees ADD
 		EmployeeId
 	)  
 ;
-
-
 
 ALTER TABLE Customers_Orders_Items 
 ADD CONSTRAINT FK1_Customers_Orders_Items FOREIGN KEY 
@@ -155,10 +141,6 @@ ADD CONSTRAINT FK2_Customers_Orders_Items FOREIGN KEY
 	)
 ;
 
-
-
-
-
 ALTER TABLE Books 
 ADD CONSTRAINT FK1_Books FOREIGN KEY 
 	(
@@ -167,7 +149,6 @@ ADD CONSTRAINT FK1_Books FOREIGN KEY
 		CategoryId
 	)
 ;
-
 
 ALTER TABLE Customers_Orders 
 ADD CONSTRAINT FK1_Customers FOREIGN KEY 
