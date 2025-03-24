@@ -1,1 +1,1 @@
-# JavaScript Programming with the Lord of the Rings
+# Design patterns with the Lord of the Rings
