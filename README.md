@@ -1,4 +1,4 @@
-# JavaScript programming with the Lord of the Rings
+# JavaScript programming with Lord of the Rings
 ## Secret Spell
 
 During the Second Age of Middle-earth, nineteen great rings were forged. Sauron forged one of his own rings, whishing to subjugate the other rings to himself. While forging it, he sang a spell that was supposed to bring it to life. The spell content was saved to the variable secretSpells.
