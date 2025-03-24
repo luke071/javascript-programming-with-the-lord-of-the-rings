@@ -1,5 +1,5 @@
 # Data structures with the Lord of the Rings
-## Stack
+## Stack data structure
 
 Implement the stack data structure using the Hobbit's backpack as an example.
 
@@ -62,3 +62,7 @@ hobbitBagpack.peek();
 hobbitBagpack.push("Apple jam");
 hobbitBagpack.display();
 ```
+## Queue data structure
+## Tree data structure
+## Graph data structure
+## Tree data structure
