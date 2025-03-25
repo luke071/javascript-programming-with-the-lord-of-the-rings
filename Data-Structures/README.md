@@ -56,11 +56,11 @@ class Stack {
 }
 
 let hobbitBagpack = new Stack();
-hobbitBagpack.push("Bread");
-hobbitBagpack.push("Butter");
-hobbitBagpack.peek();
-hobbitBagpack.push("Apple jam");
-hobbitBagpack.display();
+hobbitBagpack.push("bread"); //Added bread to backpack.
+hobbitBagpack.push("butter"); //Added butter to backpack.
+hobbitBagpack.peek(); //At the top of the backpack is Butter.
+hobbitBagpack.push("apple jam"); //Added apple jam to backpack.
+hobbitBagpack.display(); //Contents of the backpack: apple jam, butter, bread
 ```
 ## Queue data structure
 ## Tree data structure
