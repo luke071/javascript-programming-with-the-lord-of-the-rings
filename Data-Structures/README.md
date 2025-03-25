@@ -58,7 +58,7 @@ class Stack {
 let hobbitBagpack = new Stack();
 hobbitBagpack.push("bread"); //Added bread to backpack.
 hobbitBagpack.push("butter"); //Added butter to backpack.
-hobbitBagpack.peek(); //At the top of the backpack is Butter.
+hobbitBagpack.peek(); //At the top of the backpack is butter.
 hobbitBagpack.push("apple jam"); //Added apple jam to backpack.
 hobbitBagpack.display(); //Contents of the backpack: apple jam, butter, bread
 ```
