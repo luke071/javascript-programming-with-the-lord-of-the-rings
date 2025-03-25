@@ -51,11 +51,11 @@ thePrancingPonny.notifyObserver("Butter rolls with jam for collection!", "Sam");
 
 The function returns:
 
-Frodo Baggins reacts to We accept orders!
-Sam reacts to We accept orders!
-Pippin reacts to We accept orders!
-Merry reacts to We accept orders!
-Sam reacts to Butter rolls with jam for collection!
+&nbsp;Frodo Baggins reacts to We accept orders!
+&nbsp;Sam reacts to We accept orders!
+&nbsp;Pippin reacts to We accept orders!
+&nbsp;Merry reacts to We accept orders!
+&nbsp;Sam reacts to Butter rolls with jam for collection!
 ## Mediator pattern
 ## Strategy pattern
 
