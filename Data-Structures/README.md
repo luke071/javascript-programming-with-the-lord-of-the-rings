@@ -1,6 +1,9 @@
 # Data structures with the Lord of the Rings
 ## Stack data structure
 
+A stack is a data type that is a collection of elements with two main operations:
+- push add an element;
+- pop remove the last added element.
 Implement the stack data structure using the Hobbit's backpack as an example.
 
 ```js
