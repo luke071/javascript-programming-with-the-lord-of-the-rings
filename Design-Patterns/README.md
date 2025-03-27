@@ -1,6 +1,9 @@
 # Design patterns with the Lord of the Rings
 ## Observer pattern
 
+The observer pattern allows you to define a subscription mechanism to notify objects about events happening in the observed object.
+Let's imagine that we have a system of observers in the Inn the Prancing Ponny
+
 ```js 
 function HobbitObserver(name) {
   this.name = name;
