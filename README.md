@@ -1,4 +1,4 @@
-# Programming in the world of the Lord of the Rings
+# Programming with JavaScript in the world of the Lord of the Rings
 ## Secret Spell
 
 During the Second Age of Middle-earth, nineteen great rings were forged. Sauron forged one of his own rings, whishing to subjugate the other rings to himself. While forging it, he sang a spell that was supposed to bring it to life. The spell content was saved to the variable secretSpells.
@@ -86,7 +86,7 @@ function arePermutation(str1, str2) {
   }
 }
 
-console.log(arePermutation("ring", "gnir"));
+console.log(arePermutation("ring", "gnir"));//true
 ```
 
 ## Palindrome
@@ -114,6 +114,6 @@ function arePalindrome(str1, str2) {
   }
 }
 
-console.log(arePalindrome("deified", "deified"));
+console.log(arePalindrome("deified", "deified"));//true
 ```
 
