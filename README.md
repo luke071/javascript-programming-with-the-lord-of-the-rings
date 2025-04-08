@@ -117,3 +117,37 @@ function arePalindrome(str1, str2) {
 console.log(arePalindrome("deified", "deified"));//true
 ```
 
+## SOLID
+### Single Responsibility Principle
+
+According to this principle, each class should have only one responsibility.
+
+```js
+class Hero{
+    constructor(name, race) {
+        this.name = name;
+        this.race = race;
+    }
+
+    getHeroInfo() {
+        return `${this.name} is a ${this.race}.`;
+    }
+}
+
+class HeroAttack {
+    static attackHero(hero) {
+        console.log(hero.getHeroInfo());
+    }
+}
+
+class HeroDefence {
+    static defenceHero(hero) {
+        console.log(hero.getHeroInfo());
+    }
+}
+
+
+let hero = new Hero('Gandalf', 'Wizard');
+HeroAttack.attackHero(hero);
+HeroDefence.defenceHero(hero);
+```
