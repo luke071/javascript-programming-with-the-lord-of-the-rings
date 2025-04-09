@@ -151,3 +151,47 @@ let hero = new Hero('Gandalf', 'Wizard');
 HeroAttack.attackHero(hero);
 HeroDefence.defenceHero(hero);
 ```
+### Open/Closed Principle
+
+Calculate the distance that Gimli the Dwarf will cover depending on the type of terrain he is moving on. He has 1500 movement points in one turn. Then add new terrain type without modifying existing code. 
+We use polymorphism and strategy patern to add new terrain type according to the OCP rule.
+
+```js
+class DistanceCalculator {
+    constructor(strategy) {
+        this.strategy = strategy;
+    }
+
+    calculate(moveScores) {
+        return this.strategy.calculate(moveScores);
+    }
+}
+
+class RoadTerrain{
+    calculate(moveScores){
+        return moveScores / 100;
+    }
+}
+
+class GrassTerrain{
+    calculate(moveScores){
+        return moveScores / 150;
+    }
+}
+
+//Add new terrain type
+class GritTerrain{
+    calculate(moveScores){
+        return moveScores / 125;
+    }
+}
+
+const roadDistance = new DistanceCalculator(new RoadTerrain());
+console.log(roadDistance.calculate(1500));//15
+const grassDistance = new DistanceCalculator(new GrassTerrain());
+console.log(grassDistance.calculate(1500));//10
+
+const gritDistance = new DistanceCalculator(new GritTerrain());
+console.log(gritDistance.calculate(1500));//12
+```
+
