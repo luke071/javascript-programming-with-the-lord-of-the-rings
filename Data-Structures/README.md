@@ -68,5 +68,35 @@ hobbitBagpack.display(); //Contents of the backpack: apple jam, butter, bread
 ```
 ## Queue data structure
 ## Tree data structure
+```js
+class FamilyTreeNode {
+  constructor(person) {
+    this.person = person;
+    this.children = [];
+  }
+
+  addChild(child) {
+    this.children.push(child);
+  }
+
+  display(indent = 0) {
+    console.log(" ".repeat(indent) + this.person);
+    for (const child of this.children) {
+      child.display(indent + 2);
+    }
+  }
+}
+
+class Tree {
+  constructor(rootName) {
+    this.root = new TreeNode(rootPerson);
+  }
+  display() {
+    if (this.root) {
+      this.root.display();
+    }
+  }
+}
+```
 ## Graph data structure
 ## Tree data structure
