@@ -68,6 +68,9 @@ hobbitBagpack.display(); //Contents of the backpack: apple jam, butter, bread
 ```
 ## Queue data structure
 ## Tree data structure
+
+A tree is a data structure made up of elements called nodes. Each node represents a member of the Hobbit family.
+
 ```js
 class FamilyTreeNode {
   constructor(person) {
@@ -88,8 +91,8 @@ class FamilyTreeNode {
 }
 
 class Tree {
-  constructor(rootName) {
-    this.root = new TreeNode(rootPerson);
+  constructor(rootPerson) {
+    this.root = new FamilyTreeNode(rootPerson);
   }
   display() {
     if (this.root) {
@@ -97,6 +100,28 @@ class Tree {
     }
   }
 }
+
+let hobbitFamilyTree = new Tree("Hobbit Family Tree");
+
+let line01 = new FamilyTreeNode("Balbo Baggins");
+let line11 = new FamilyTreeNode("Mungo Baggins");
+let line12 = new FamilyTreeNode("Largo Baggins");
+let line21 = new FamilyTreeNode("Bungo Baggins");
+let line22 = new FamilyTreeNode("Frosco Baggins");
+let line31 = new FamilyTreeNode("Bilbo Baggins");
+let line32 = new FamilyTreeNode("Drogo Baggins");
+let line41 = new FamilyTreeNode("Frodo Baggins");
+
+hobbitFamilyTree.root.addChild(line01);
+line01.addChild(line11);
+line01.addChild(line12);
+line11.addChild(line21);
+line12.addChild(line22);
+line21.addChild(line31);
+line22.addChild(line32);
+line32.addChild(line41);
+
+hobbitFamilyTree.display();
 ```
 ## Graph data structure
 ## Tree data structure
