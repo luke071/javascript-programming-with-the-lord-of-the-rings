@@ -195,3 +195,6 @@ const gritDistance = new DistanceCalculator(new GritTerrain());
 console.log(gritDistance.calculate(1500));//12
 ```
 
+### Liskov Substitution Principle
+
+According to this principle, background objects should be interchangeable with base class objects without affecting the correctness of the code. The principle will be explained using the example of a flightless bird, the ostrich. In the world of the Lord of the Rings Ostirith is a distinctively built watchtower at the eastern foot of the Ephel Dúath in the Second Age.
