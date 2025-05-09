@@ -198,3 +198,20 @@ console.log(gritDistance.calculate(1500));//12
 ### Liskov Substitution Principle
 
 According to this principle, background objects should be interchangeable with base class objects without affecting the correctness of the code. The principle will be explained using the example of a flightless bird, the ostrich. In the world of the Lord of the Rings Ostirith is a distinctively built watchtower at the eastern foot of the Ephel Dúath in the Second Age.
+
+### Interface Segregation Principle
+
+The interface segregation principle states that a class should not implement interfaces it does not use. In JavaScript, we can create an interface structure as a set of method signatures that a class must implement.
+
+### Dependency Segregation Principle
+
+Higher level modules should not depend on lower level modules. Both should depend on the abstraction.
+
+## Test-Driven Development
+
+It is a software development technique in which we first write unit tests and then code that passes those tests. Tests drive the coding process.
+
+The TDD laws:
+1. Writing production code precedes writing a test that defines the expected functionality.
+2. We write minimal failing test code that compiles.
+3. We write minimal test code that passes the test.
