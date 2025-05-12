@@ -201,7 +201,7 @@ According to this principle, background objects should be interchangeable with b
 
 ### Interface Segregation Principle
 
-The interface segregation principle states that a class should not implement interfaces it does not use. In JavaScript, we can create an interface structure as a set of method signatures that a class must implement.
+The interface segregation principle states that a class should not implement interfaces it does not use. In Typescript we can use interface structure to verify that a class conforms to a specific interface.
 
 ```ts
 class Rider {
