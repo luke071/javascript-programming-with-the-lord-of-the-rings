@@ -203,6 +203,46 @@ According to this principle, background objects should be interchangeable with b
 
 The interface segregation principle states that a class should not implement interfaces it does not use. In JavaScript, we can create an interface structure as a set of method signatures that a class must implement.
 
+```ts
+class Rider {
+  ride() {
+    console.log("I can ride.");
+  }
+}
+
+class AxeFighter {
+  axeFight() {
+    console.log("I fight with a axe.");
+  }
+}
+
+class SwordFighter {
+  swordFight() {
+    console.log("I fight with a sword.");
+  }
+}
+
+class Hobbit implements Rider, SwordFighter {
+  ride() {
+    //Ride logic
+  }
+
+  swordFight() //Fight with a sword logic
+  {}
+}
+
+class Dwarf implements Rider, AxeFighter {
+  ride() {
+    //Ride logic
+  }
+
+  axeFight() {
+    //Fight with a axe logic
+  }
+}
+
+```
+
 ### Dependency Segregation Principle
 
 Higher level modules should not depend on lower level modules. Both should depend on the abstraction.
