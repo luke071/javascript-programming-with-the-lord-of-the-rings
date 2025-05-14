@@ -199,6 +199,34 @@ console.log(gritDistance.calculate(1500));//12
 
 According to this principle, background objects should be interchangeable with base class objects without affecting the correctness of the code. The principle will be explained using the example of a flightless bird, the ostrich. In the world of the Lord of the Rings Ostirith is a distinctively built watchtower at the eastern foot of the Ephel Dúath in the Second Age.
 
+```js
+class Animal {
+  eat() {
+    console.log("I can drink");
+  }
+}
+
+class Bird extends Animal {
+  fly() {
+    console.log("I can fly");
+  }
+}
+
+class Ostrich extends Animal {
+  run() {
+    console.log("I can run");
+  }
+}
+
+let eagle = new Bird();
+eagle.eat();
+eagle.fly();
+
+let ostrich = new Ostrich();
+ostrich.eat();
+ostrich.run();
+```
+
 ### Interface Segregation Principle
 
 The interface segregation principle states that a class should not implement interfaces it does not use. In Typescript we can use interface structure to verify that a class conforms to a specific interface.
