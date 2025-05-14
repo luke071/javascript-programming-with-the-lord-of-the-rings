@@ -255,8 +255,9 @@ class Hobbit implements Rider, SwordFighter {
     //Ride logic
   }
 
-  swordFight() //Fight with a sword logic
-  {}
+  swordFight(){
+    //Fight with a sword logic
+  }
 }
 
 class Dwarf implements Rider, AxeFighter {
@@ -274,6 +275,36 @@ class Dwarf implements Rider, AxeFighter {
 ### Dependency Segregation Principle
 
 Higher level modules should not depend on lower level modules. Both should depend on the abstraction.
+
+```js
+class Gate {
+  open() {}
+  close() {}
+}
+
+class FortressGate extends Gate {
+  open() {
+    console.log("The gate of the fortress is open");
+  }
+  close() {
+    console.log("The gate of the fortress is close");
+  }
+}
+
+class Operator {
+  constructor(gate) {
+    this.gate = gate;
+  }
+
+  operate() {
+    this.gate.open();
+  }
+}
+
+const gateDunharrow = new FortressGate();
+const gateDunharrowOperator = new Operator(gateDunharrow);
+gateDunharrowOperator.operate();
+```
 
 ## Test-Driven Development
 
