@@ -1,16 +1,29 @@
 # Arrays
 ```ts
-let fellowshipMember: string[];
+interface member {
+    name: string,
+    race: string
+}
+let fellowshipMembers: Array<member>;
 
-fellowshipMember = ['Frodo'];
-fellowshipMember;
-fellowshipMember.push('Merry');
-fellowshipMember.shift()
-fellowshipMember.push('Pippin', 'Aragorn', 'Legolas', 'Gimli', 'Boromir', "Gandalf");
-fellowshipMember.pop()
-fellowshipMember.unshift('Gandalf');
-fellowshipMember.unshift('Frodo');
-fellowshipMember.push("Sam");
+fellowshipMembers = [{name: 'Frodo', race: 'Hobbit'}];
+fellowshipMembers.push({name: 'Mery', race: 'Hobbit'});
+fellowshipMembers.shift()
+fellowshipMembers.push({name: 'Pippin', race: 'Hobbit'}, {name: 'Aragorn', race: 'Human'}, {name: 'Legolas', race: 'Elf'}, {name: 'Gimli', race: 'Dwarf'}, {name: 'Boromir', race: 'Human'}, {name: 'Gandalf', race: 'Wizard'});
+fellowshipMembers.pop()
+fellowshipMembers.unshift({name: 'Gandalf', race: 'Wizard'});
+fellowshipMembers.unshift({name: 'Frodo', race: 'Hobbit'});
+fellowshipMembers.push({name: 'Sam', race: 'Hobbit'});
 
-console.log(`The Fellowship has ` + fellowshipMember.length + ' members. It consists of ' +fellowshipMember+".");
+console.log(`The Fellowship has ` + fellowshipMembers.length + " members.");//'The Fellowship has 9 members.'
+```
+Extracting character names  
+```ts
+const names = fellowshipMembers.map(member => member.name);
+console.log(names);//['Frodo', 'Gandalf', 'Mery', 'Pippin', 'Aragorn', 'Legolas', 'Gimli','Boromir', 'Sam']
+```
+Creating full character descriptions
+```ts
+const descriptions = fellowshipMembers.map(member => `${member.name} is a ${member.race}`);
+console.log(descriptions[0]);//['Frodo is a Hobbit']
 ```
