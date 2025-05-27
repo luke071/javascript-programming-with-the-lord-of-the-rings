@@ -17,6 +17,7 @@ fellowshipMembers.push({name: 'Sam', race: 'Hobbit'});
 
 console.log(`The Fellowship has ` + fellowshipMembers.length + " members.");//'The Fellowship has 9 members.'
 ```
+## Array map()
 Extracting character names  
 ```ts
 const names = fellowshipMembers.map(member => member.name);
@@ -26,4 +27,9 @@ Creating full character descriptions
 ```ts
 const descriptions = fellowshipMembers.map(member => `${member.name} is a ${member.race}`);
 console.log(descriptions[0]);//['Frodo is a Hobbit']
+```
+Extracting unique races
+```ts
+const uniqueRaces = [...new Set(fellowshipMembers.map(member => member.race))];
+console.log(uniqueRaces);//[ 'Hobbit', 'Wizard', 'Human', 'Elf', 'Dwarf' ]
 ```
