@@ -33,3 +33,22 @@ Extracting unique races
 const uniqueRaces = [...new Set(fellowshipMembers.map(member => member.race))];
 console.log(uniqueRaces);//[ 'Hobbit', 'Wizard', 'Human', 'Elf', 'Dwarf' ]
 ```
+## Array reduce()
+Counting the total number of members of the Fellowship of the Ring
+```ts
+const totalMembers = fellowshipMembers.reduce((member) => member + 1, 0);
+console.log(totalMembers);//9
+```
+## Array filter()
+Filtering by race
+```ts
+const wizards = fellowshipMembers.filter(member => member.race === "Wizard");
+console.log(wizards);//[ { name: 'Gandalf', race: 'Wizard' } ]
+```
+## Array findIndex()
+Finding the member index
+```ts
+const indexOfAragorn = fellowshipMembers.findIndex(member => member.name === "Aragorn");
+console.log(indexOfAragorn);//
+```
+
