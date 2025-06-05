@@ -123,5 +123,4 @@ line32.addChild(line41);
 
 hobbitFamilyTree.display();
 ```
-## Graph data structure
-## Tree data structure
+

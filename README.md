@@ -306,11 +306,4 @@ const gateDunharrowOperator = new Operator(gateDunharrow);
 gateDunharrowOperator.operate();
 ```
 
-## Test-Driven Development
 
-It is a software development technique in which we first write unit tests and then code that passes those tests. Tests drive the coding process.
-
-The TDD laws:
-1. Writing production code precedes writing a test that defines the expected functionality.
-2. We write minimal failing test code that compiles.
-3. We write minimal test code that passes the test.

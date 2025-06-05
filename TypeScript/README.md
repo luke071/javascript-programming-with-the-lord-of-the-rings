@@ -2,18 +2,19 @@
 ```ts
 interface member {
     name: string,
-    race: string
+    race: string,
+    age: number
 }
 let fellowshipMembers: Array<member>;
 
-fellowshipMembers = [{name: 'Frodo', race: 'Hobbit'}];
-fellowshipMembers.push({name: 'Mery', race: 'Hobbit'});
+fellowshipMembers = [{name: 'Frodo', race: 'Hobbit', age: 50}];
+fellowshipMembers.push({name: 'Mery', race: 'Hobbit', age : 35});
 fellowshipMembers.shift()
-fellowshipMembers.push({name: 'Pippin', race: 'Hobbit'}, {name: 'Aragorn', race: 'Human'}, {name: 'Legolas', race: 'Elf'}, {name: 'Gimli', race: 'Dwarf'}, {name: 'Boromir', race: 'Human'}, {name: 'Gandalf', race: 'Wizard'});
+fellowshipMembers.push({name: 'Pippin', race: 'Hobbit', age : 34}, {name: 'Aragorn', race: 'Human', age: 87}, {name: 'Legolas', race: 'Elf', age: 105}, {name: 'Gimli', race: 'Dwarf', age: 110}, {name: 'Boromir', race: 'Human', age: 40}, {name: 'Gandalf', race: 'Wizard', age:2000});
 fellowshipMembers.pop()
-fellowshipMembers.unshift({name: 'Gandalf', race: 'Wizard'});
-fellowshipMembers.unshift({name: 'Frodo', race: 'Hobbit'});
-fellowshipMembers.push({name: 'Sam', race: 'Hobbit'});
+fellowshipMembers.unshift({name: 'Gandalf', race: 'Wizard', age: 2000});
+fellowshipMembers.unshift({name: 'Frodo', race: 'Hobbit', age: 50});
+fellowshipMembers.push({name: 'Sam', race: 'Hobbit', age : 38});
 
 console.log(`The Fellowship has ` + fellowshipMembers.length + " members.");//'The Fellowship has 9 members.'
 ```
@@ -39,6 +40,11 @@ Counting the total number of members of the Fellowship of the Ring
 const totalMembers = fellowshipMembers.reduce((member) => member + 1, 0);
 console.log(totalMembers);//9
 ```
+Finding the maximum value of a members.
+```ts
+const maxAge = fellowshipMembers.reduce((acc, curr) => {return Math.max(acc, curr.age);}, 0)
+console.log(maxAge)//2000
+```
 ## Array filter()
 Filtering by race
 ```ts
@@ -49,6 +55,6 @@ console.log(wizards);//[ { name: 'Gandalf', race: 'Wizard' } ]
 Finding the member index
 ```ts
 const indexOfAragorn = fellowshipMembers.findIndex(member => member.name === "Aragorn");
-console.log(indexOfAragorn);//
+console.log(indexOfAragorn);//4
 ```
 
